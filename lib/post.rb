@@ -2,6 +2,6 @@ class Post
   attr_accessor :title
 
   def author=(author)
-    @author = Author.new
+    @author = Author.new.name(author)
   end
 end
